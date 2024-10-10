@@ -4,6 +4,16 @@ interface GenderFormData {
   handleGender: (gender: string) => void;
 }
 
+/**
+ * Gender Form
+ *
+ * A child component of CreateCharacter.
+ * It is used to select the gender of the character.
+ * It sends the selected gender to the parent component.
+ *
+ * @param {Function(string)} handleGender - A function that handles the gender selection
+ * @returns
+ */
 const GenderForm: React.FC<GenderFormData> = ({ handleGender }) => {
   return (
     <div>
